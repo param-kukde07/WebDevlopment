@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript name</title>
+    <script>
+        function sayHello(name, age)
+        {
+            if (name == "" || age == "")
+            return;
+            document.write(name + " is " + age + " year old.");
+        }
+    </script>
+</head>
+<body>
+    <p>Click the following button to call the function</p>
+    <form>
+        <input name="t1" placeholder="Enter name"><br><br>
+        <input name="t2" placeholder="Enter age"><br><br>
+        <input type="button" onclick="sayHello(t1.value,t2.value)" value="Say Hello">
+    </form>
+</body>
+</html>

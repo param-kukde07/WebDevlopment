@@ -1,0 +1,35 @@
+1) var
+function example() {
+    var x = 10;
+    if (true) {
+        var x = 20; // This will affect the value of 'x' outside the block
+    }
+    console.log(x); // Outputs 20, not 10
+}
+
+
+2) let
+function example() {
+    let y = 10;
+    if (true) {
+        let y = 20; // This does not affect the value of 'y' outside the block
+    }
+    console.log(y); // Outputs 10
+}
+
+3)
+When using for loops, the behavior of var and let can lead to different results:
+
+// Using var
+for (var i = 0; i < 5; i++) {
+    setTimeout(function() {
+        console.log(i); // Outputs 5, five times
+    }, 1000);
+}
+
+// Using let
+for (let j = 0; j < 5; j++) {
+    setTimeout(function() {
+        console.log(j); // Outputs 0, 1, 2, 3, 4
+    }, 1000);
+}

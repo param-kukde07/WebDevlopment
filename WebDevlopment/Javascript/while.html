@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter the number", "Enter..."));
+        let count = 0;
+        while (num > 0){
+            num = Math.trunc(num / 10); // Math.trunc will truncate the number zero to the lowers decimal places (567.2  => 567)
+            count++;
+        }
+        document.write("Digits : " + count);
+    </script>
+</body>
+</html>

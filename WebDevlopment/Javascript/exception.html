@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception</title>
+    <script>
+        function myFunc(){
+            let a = 100;
+            try
+            {
+                let s = a.toUpperCase();
+                alert("Value of a variable is "+ s);
+            }
+            catch (e)
+            {
+                alert("error");
+            }
+            finally
+            {
+                alert("Finally block will always excecute!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Click the following to see the result</p>
+    <form>
+        <input type="button" value="Click Me" onclick="myFunc();">
+    </form>
+</body>
+</html>

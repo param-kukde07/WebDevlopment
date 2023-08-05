@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin</title>
+</head>
+<body>
+    <script>
+        let actualpin = "3456";
+        let pin;
+        let count = 0;
+        do{
+            pin = prompt("Enter Your Pin: ", "Enter...");
+            count++;
+        } while(pin != actualpin && count < 3);
+        if (pin == actualpin){
+            document.write("Welcome user...")
+        }
+        else{
+            document.write("Account Locked")
+        }
+    </script>
+</body>
+</html>
